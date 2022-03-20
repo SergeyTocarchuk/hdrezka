@@ -1,0 +1,12 @@
+<%= form_with model: @film do |form| %>
+  <h1 class='form--title'>Add new film</h1>
+  <div class="form">
+    <%= form.label :title, "Title" %>
+    <%= form.text_field(:title, class: 'form--input') %>
+    <%= form.label :genre, "Genre" %>
+    <%= form.text_field(:genre, class: 'form--input') %>
+    <%= form.label :release, "Release" %>
+    <%= form.month_field(:release, class: 'form--input') %>
+    <%= form.submit(value: "New film", class: 'form--button') %>
+  </div>
+<% end %>

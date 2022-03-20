@@ -1,0 +1,12 @@
+<div class="card--list">
+  <% @films.each do |film| %>
+    <div class="card">
+      <%= image_tag("madagascar_3.jpeg") %>
+      <div class="card--content">
+        <h2><%= link_to film.title, film_path(film), class: 'card--title' %></h2>
+        <p class="card--dates"><%= film.release %></p>
+        <p class="card--text"><%= film.genre %></p>
+      </div>
+    </div> 
+  <% end %>
+</div>

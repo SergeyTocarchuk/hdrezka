@@ -1,0 +1,9 @@
+<%= link_to 'Home', root_path %>
+<div class="card">
+  <%= image_tag("madagascar_3.jpeg") %>
+  <div class="card--content">
+    <h2><%= @film.title %></h2>
+    <p class="card--dates"><%= @film.release %></p>
+    <p class="card--text"><%= @film.genre %></p>
+  </div>
+</div> 
